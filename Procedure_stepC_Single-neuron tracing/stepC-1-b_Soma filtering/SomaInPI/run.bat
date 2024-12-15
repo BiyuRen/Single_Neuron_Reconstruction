@@ -1,0 +1,1 @@
+SomaInPI.exe -n D:\bapsoftware\ch00PI.nrrd -f F:\Downloads\Total somas.fnt -ns 10:10:10

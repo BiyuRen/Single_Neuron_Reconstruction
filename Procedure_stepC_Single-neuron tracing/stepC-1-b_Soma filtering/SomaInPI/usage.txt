@@ -1,0 +1,7 @@
+
+1. Open and edit the run.bat file, modifying the two directories as needed, then save and double-click run.bat to execute it.
+2. After a few seconds, a window will appear.
+3. Use the mouse scroll wheel to change frames; the up arrow key increases the frame rate, while the down arrow key decreases it.
+4. Press the "N" key to sequentially jump to frames with somas.
+5. Press and hold the left mouse button to adjust the window width by dragging up and down, and adjust the window level by dragging left and right.
+

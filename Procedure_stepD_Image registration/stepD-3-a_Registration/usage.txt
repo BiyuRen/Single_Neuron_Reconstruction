@@ -1,0 +1,1 @@
+bash antsRegistrationSyN.sh -d 3 -t s -n 20 -f ./fix.tif -m ./moving.tif -o ./result

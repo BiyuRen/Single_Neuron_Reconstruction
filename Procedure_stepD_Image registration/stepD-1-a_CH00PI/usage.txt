@@ -1,0 +1,7 @@
+1.list.txt is file  List of image stacks from PI chanel，such as：
+E:/2021/fgh/202603_CH2_10_10_10um\202603_00001_CH2_resample.tif
+E:/2021/fgh/202603_CH2_10_10_10um\202603_00011_CH2_resample.tif
+E:/2021/fgh/202603_CH2_10_10_10um\202603_00021_CH2_resample.tif
+E:/2021/fgh/202603_CH2_10_10_10um\202603_00031_CH2_resample.tif
+E:/2021/fgh/202603_CH2_10_10_10um\202603_00041_CH2_resample.tif
+2.conv.bat is a batch file, and its main function is to generate CHOOPI.nrrd by executing fnt-slice2cube.exe.

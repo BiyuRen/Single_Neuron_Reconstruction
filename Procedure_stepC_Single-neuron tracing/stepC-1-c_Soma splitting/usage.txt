@@ -1,0 +1,6 @@
+
+1. Place the FNT file containing all soma location information (e.g., Total somas.fnt) in the same directory.
+2. Open and edit the split.bat file, setting folder=Total somas, then save and double-click split.bat to execute it.
+3. Upon completion, a folder named Total somas will be created in the same directory, containing all the split individual soma FNT files (e.g., 001.fnt;002.fnt...) .
+
+
