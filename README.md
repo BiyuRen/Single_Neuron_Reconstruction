@@ -26,22 +26,23 @@
 ```
 
 ## Procedure_stepC_Single-neuron tracing
-### stepC-1-b_Soma filtering
+### stepC-1-b_Soma localization
 1. Open and edit the run.bat file, modifying the two directories as needed, then save and double-click run.bat to execute it.
 2. After a few seconds, a window will appear.
 3. Use the mouse scroll wheel to change frames; the up arrow key increases the frame rate, while the down arrow key decreases it.
 4. Press the "N" key to sequentially jump to frames with somas.
 5. Press and hold the left mouse button to adjust the window width by dragging up and down, and adjust the window level by dragging left and right.
 ### stepC-1-c_Soma splitting
-1. Place the FNT file containing all soma location information (e.g., Total somas.fnt) in the same directory.
-2. Open and edit the split.bat file, setting folder=Total somas, then save and double-click split.bat to execute it.
-3. Upon completion, a folder named Total somas will be created in the same directory, containing all the split individual soma FNT files (e.g., 001.fnt;002.fnt...) .
-## Procedure_stepD_Image registration
-### stepD-1-a_CH00PI 
+1. Place the FNT file containing all soma location information (e.g., total_somas.fnt) in the same directory.
+2. Open and edit the split.bat file, setting folder=total_somas, then save and double-click split.bat to execute it.
+3. Upon completion, a folder named total_somas will be created in the same directory, containing all the split individual soma FNT files (e.g., 001.fnt;002.fnt...) .
+## Procedure_stepD_Quality control
+## Procedure_stepE_Image registration
+### stepE-1-a_CH00PI 
 1.Run the conv.bat
-### stepD-2-ab_Obtain moving mask and fix mask
+### stepE-2-ab_Obtain moving mask and fix mask
 1.Run the moving_mask.py and the .fix_mask.py
-### stepD-3-a_Registration
+### stepE-3-a_Registration
 ```
     bash antsRegistrationSyN.sh -d 3 -t s -n 20 -f ./fix.tif -m ./moving.tif -o ./result
 ```
@@ -51,7 +52,7 @@
 * -f The path to the fixed image
 * -m The path to the moving image
 * -o he prefix for the output results
-### stepD-4-a_Neuron dataset registration
+### stepF-1-a_Transformation
 antsApplyTransformsToPoints -d 3 -i CSV.csv -o TCSV.csv -t [/result0GenericAffine.mat,1] -t /result1InverseWarp.nii.gz
 * -d Dimension Parameter
 * -i Input Point file
