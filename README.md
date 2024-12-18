@@ -37,6 +37,8 @@
 2. Open and edit the split.bat file, setting folder=total_somas, then save and double-click split.bat to execute it.
 3. Upon completion, a folder named total_somas will be created in the same directory, containing all the split individual soma FNT files (e.g., 001.fnt;002.fnt...) .
 ## Procedure_stepD_Quality control
+### stepD-2-a_Lint
+
 ## Procedure_stepE_Image registration
 ### stepE-1-a_CH00PI 
 1.Run the conv.bat
@@ -52,7 +54,7 @@
 * -f The path to the fixed image
 * -m The path to the moving image
 * -o he prefix for the output results
-### stepF-1-a_Transformation
+## Procedure_stepF_Transformation
 antsApplyTransformsToPoints -d 3 -i CSV.csv -o TCSV.csv -t [/result0GenericAffine.mat,1] -t /result1InverseWarp.nii.gz
 * -d Dimension Parameter
 * -i Input Point file
