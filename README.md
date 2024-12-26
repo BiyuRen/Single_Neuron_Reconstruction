@@ -38,12 +38,15 @@
 3. Upon completion, a folder named total_somas will be created in the same directory, containing all the split individual soma FNT files (e.g., 001.fnt;002.fnt...) .
 ## Procedure_stepD_Quality control
 ### stepD-2-a_Lint
+1. Collect all single-neuron tracing results of the same sample into a folder, which is named “merge”, and place it in the same path as lint.bat.
+2. Double-click to run lint.bat and wait for the execution to complete.
+3. After successful execution, open the file with the COLLISION.fnt extension in the lint folder using the FNT software. Locate the highlighted areas and analyze them. If there are tracing errors, you can make modifications to individual tracing files within the split folder.
 
 ## Procedure_stepE_Image registration
 ### stepE-1-a_CH00PI 
-1.Run the conv.bat
+1. Run the conv.bat
 ### stepE-2-ab_Obtain moving mask and fix mask
-1.Run the moving_mask.py and the .fix_mask.py
+1. Run the moving_mask.py and the .fix_mask.py
 ### stepE-3-a_Registration
 ```
     bash antsRegistrationSyN.sh -d 3 -t s -n 20 -f ./fix.tif -m ./moving.tif -o ./result
