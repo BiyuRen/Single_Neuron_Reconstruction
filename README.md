@@ -45,17 +45,17 @@
 ## Procedure_stepE_Image registration
 ### stepE-1-a_CH00PI 
 1. Run the conv.bat
-### stepE-2-ab_Obtain moving mask and fix mask
-1. Run the moving_mask.py and the .fix_mask.py
+### stepE-2-ab_Mask obtaining
+1. Run the sample_mask.py and the template_mask.py
 ### stepE-3-a_Registration
 ```
-    bash antsRegistrationSyN.sh -d 3 -t s -n 20 -f ./fix.tif -m ./moving.tif -o ./result
+    bash antsRegistrationSyN.sh -d 3 -t s -n 20 -f ./sample.tif -m ./template.tif -o ./result
 ```
 * -d Specifies the dimension of the image data
 * -t Specifies the type of transformation used for registration
 * -n Specifies the number of threads used during the registration process
-* -f The path to the fixed image
-* -m The path to the moving image
+* -f The path to the sample image
+* -m The path to the template image
 * -o he prefix for the output results
 ## Procedure_stepF_Transformation
 antsApplyTransformsToPoints -d 3 -i CSV.csv -o TCSV.csv -t [/result0GenericAffine.mat,1] -t /result1InverseWarp.nii.gz
